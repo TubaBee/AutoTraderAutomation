@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-26T01:47:37.592Z",
+        "line": 4,
+        "name": "On the home page, verify that the following types of elements are present",
+        "description": "",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user should be able to access autotrader web page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user should able to see \"Browse by Make\" browser",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Browse by Make"
+                ]
+              },
+              {
+                "cells": [
+                  "Browse by Style"
+                ]
+              },
+              {
+                "cells": [
+                  "Advanced Search"
+                ]
+              },
+              {
+                "cells": [
+                  "Search"
+                ]
+              },
+              {
+                "cells": [
+                  "Make"
+                ]
+              },
+              {
+                "cells": [
+                  "Model"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@autotrader"
+          }
+        ]
+      }
+    ],
+    "name": "in Autoreader Main Page taking some of webelement",
+    "description": "",
+    "id": "in-autoreader-main-page-taking-some-of-webelement",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AutoMainPage.feature",
+    "tags": []
+  }
+]
