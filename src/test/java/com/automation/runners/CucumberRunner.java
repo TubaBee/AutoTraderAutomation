@@ -1,7 +1,6 @@
 package com.automation.runners;
 
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,10 +10,12 @@ import org.junit.runner.RunWith;
         glue = "com/automation/stepDefination",
         features = "src/test/resources/Features",
         plugin = {
-                "json:target/cucumber.json"
+                "json:target/cucumber.json",
+                "html:target/cucumber-report.html"
         },
         tags = "@autotrader",
         dryRun = false
 
-)public class CucumberRunner {
+)
+public class CucumberRunner {
 }

@@ -3,62 +3,410 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-26T01:47:37.592Z",
-        "line": 4,
+        "start_timestamp": "2020-07-27T02:13:47.593Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9432300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setups()"
+            }
+          }
+        ],
+        "line": 12,
         "name": "On the home page, verify that the following types of elements are present",
         "description": "",
-        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 220100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 6216062200,
+              "status": "passed"
             },
             "line": 5,
             "name": "user should be able to access autotrader web page",
-            "match": {},
+            "match": {
+              "location": "MainPageStep.user_should_be_able_to_access_autotrader_web_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.automation.stepDefination.MainPageStep.user_should_able_to_see_browser(MainPageStep.java:27)\r\n\tat ✽.user should able to see \"Browse by Make\" browser(file:src/test/resources/Features/AutoMainPage.feature:6)\r\n",
+              "duration": 716287600,
+              "status": "failed"
             },
             "line": 6,
             "name": "user should able to see \"Browse by Make\" browser",
-            "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Browse by Make"
-                ]
-              },
-              {
-                "cells": [
-                  "Browse by Style"
-                ]
-              },
-              {
-                "cells": [
-                  "Advanced Search"
-                ]
-              },
-              {
-                "cells": [
-                  "Search"
-                ]
-              },
-              {
-                "cells": [
-                  "Make"
-                ]
-              },
-              {
-                "cells": [
-                  "Model"
-                ]
-              }
-            ],
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Browse by Make\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MainPageStep.user_should_able_to_see_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@autotrader"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T02:13:54.598Z",
+        "before": [
+          {
+            "result": {
+              "duration": 192400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setups()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "On the home page, verify that the following types of elements are present",
+        "description": "",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 101500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1293516100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should be able to access autotrader web page",
+            "match": {
+              "location": "MainPageStep.user_should_be_able_to_access_autotrader_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ER7PL0P\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\Tuba\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50042}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7055ecf1abe084111435a603b2a5c9f9\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.automation.stepDefination.MainPageStep.user_should_able_to_see_browser(MainPageStep.java:27)\r\n\tat ✽.user should able to see \"Browse by Style\" browser(file:src/test/resources/Features/AutoMainPage.feature:6)\r\n",
+              "duration": 20547000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user should able to see \"Browse by Style\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Browse by Style\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MainPageStep.user_should_able_to_see_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@autotrader"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T02:13:55.919Z",
+        "before": [
+          {
+            "result": {
+              "duration": 158900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setups()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "On the home page, verify that the following types of elements are present",
+        "description": "",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 317600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 192858200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should be able to access autotrader web page",
+            "match": {
+              "location": "MainPageStep.user_should_be_able_to_access_autotrader_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ER7PL0P\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\Tuba\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50042}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7055ecf1abe084111435a603b2a5c9f9\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.automation.stepDefination.MainPageStep.user_should_able_to_see_browser(MainPageStep.java:27)\r\n\tat ✽.user should able to see \"Advanced Search\" browser(file:src/test/resources/Features/AutoMainPage.feature:6)\r\n",
+              "duration": 14333800,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user should able to see \"Advanced Search\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Advanced Search\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MainPageStep.user_should_able_to_see_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@autotrader"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T02:13:56.135Z",
+        "before": [
+          {
+            "result": {
+              "duration": 144400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setups()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "On the home page, verify that the following types of elements are present",
+        "description": "",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 188000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 176449600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should be able to access autotrader web page",
+            "match": {
+              "location": "MainPageStep.user_should_be_able_to_access_autotrader_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ER7PL0P\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\Tuba\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50042}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7055ecf1abe084111435a603b2a5c9f9\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.automation.stepDefination.MainPageStep.user_should_able_to_see_browser(MainPageStep.java:27)\r\n\tat ✽.user should able to see \"Search\" browser(file:src/test/resources/Features/AutoMainPage.feature:6)\r\n",
+              "duration": 26215700,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user should able to see \"Search\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MainPageStep.user_should_able_to_see_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@autotrader"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T02:13:56.349Z",
+        "before": [
+          {
+            "result": {
+              "duration": 194500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setups()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "On the home page, verify that the following types of elements are present",
+        "description": "",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 133900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 182374200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should be able to access autotrader web page",
+            "match": {
+              "location": "MainPageStep.user_should_be_able_to_access_autotrader_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ER7PL0P\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\Tuba\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50042}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7055ecf1abe084111435a603b2a5c9f9\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.automation.stepDefination.MainPageStep.user_should_able_to_see_browser(MainPageStep.java:27)\r\n\tat ✽.user should able to see \"Make\" browser(file:src/test/resources/Features/AutoMainPage.feature:6)\r\n",
+              "duration": 13877600,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user should able to see \"Make\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Make\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MainPageStep.user_should_able_to_see_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@autotrader"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T02:13:56.554Z",
+        "before": [
+          {
+            "result": {
+              "duration": 106000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setups()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "On the home page, verify that the following types of elements are present",
+        "description": "",
+        "id": "in-autoreader-main-page-taking-some-of-webelement;on-the-home-page--verify-that-the-following-types-of-elements-are-present;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 353200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 168360000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should be able to access autotrader web page",
+            "match": {
+              "location": "MainPageStep.user_should_be_able_to_access_autotrader_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ER7PL0P\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\Tuba\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50042}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7055ecf1abe084111435a603b2a5c9f9\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mountNode\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div/div/button[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.automation.stepDefination.MainPageStep.user_should_able_to_see_browser(MainPageStep.java:27)\r\n\tat ✽.user should able to see \"Model\" browser(file:src/test/resources/Features/AutoMainPage.feature:6)\r\n",
+              "duration": 13874400,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user should able to see \"Model\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Model\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MainPageStep.user_should_able_to_see_browser(String)"
+            },
             "keyword": "Then "
           }
         ],
