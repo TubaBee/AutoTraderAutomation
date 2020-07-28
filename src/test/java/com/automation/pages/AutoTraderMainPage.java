@@ -30,6 +30,7 @@ public class AutoTraderMainPage {
     @FindBy(xpath = "//*[@id=\"search\"]")
     public WebElement SearchBtn;
 
+
 //    ArrayList<WebElement> list=new ArrayList<>(Arrays.asList(BrowserByMake,BrowserByStyle,AdvancedSearch,SearchBtn,Make,Model));
 
     public AutoTraderMainPage() {

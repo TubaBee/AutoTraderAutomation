@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "html:target/cucumber-report.html"
         },
-        tags = "@autotrader",
+        tags = "@advanceSearch",
         dryRun = false
 
 )
