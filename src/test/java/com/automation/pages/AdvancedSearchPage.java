@@ -5,15 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class AdvancedSearchPage {
 
     @FindBy(xpath = "//*[@id=\"zip32701\"]")
     public WebElement zipcode;
 
-    @FindBy(xpath = "//*[@id=\"mountNode\"]/div/div[1]/div/div/div[1]/form/div[3]/div/div[2]/div/div/div/div[3]/label/div")
-    public WebElement certified;
+    @FindBy(xpath = "//*[@id=\"mountNode\"]/div[1]/div/div/div[1]/form/div[3]/div/div[2]/div/div/div/div[3]/label/div")
+      public WebElement certified;
 
-    @FindBy(xpath = "//*[@id=\"mountNode\"]/div/div[1]/div/div/div[1]/form/div[5]/div/div[2]/div/div/div[1]/label[1]/div[1]")
+    @FindBy(xpath = "//div[contains(text(),'Convertible')]")
     public WebElement convertible;
 
     @FindBy(xpath = "//*[@id=\"4101482096\"]")
@@ -25,8 +27,25 @@ public class AdvancedSearchPage {
     @FindBy(xpath = "//*[@id=\"1970425032\"]")
     public WebElement make;
 
-    @FindBy(xpath = "//*[@id=\"mountNode\"]/div/div[1]/div/div/div[1]/form/div[15]/div/div/button")
+    @FindBy(xpath = "//button[contains(text(),'Search')]")
     public WebElement searchBtn;
+
+//    @FindBy(xpath = "//a/h2[contains(data-cmp=\"subheading\",BMW)]")
+//    public List onlyBMW;
+
+
+    public void waitT(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void clearCookies(){
+        AutoDriver.getDriver().manage().deleteAllCookies();
+    }
+
 
 
     public AdvancedSearchPage() {
