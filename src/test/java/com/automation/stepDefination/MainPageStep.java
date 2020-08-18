@@ -10,16 +10,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.concurrent.TimeUnit;
 
 public class MainPageStep {
     AutoTraderMainPage mainPage = new AutoTraderMainPage();
     AdvancedSearchPage advancedSearchPage = new AdvancedSearchPage();
-
 
 
     @Given("user should be able to access autotrader web page")
@@ -81,7 +78,7 @@ public class MainPageStep {
 
         advancedSearchPage.waitT();
         Select yearSelectStart = new Select(advancedSearchPage.startYear);
-       advancedSearchPage.clearCookies();
+        advancedSearchPage.clearCookies();
         yearSelectStart.selectByVisibleText("2017");
 
         Select yearSelectEnd = new Select(advancedSearchPage.endYear);
@@ -95,6 +92,8 @@ public class MainPageStep {
         AutoDriver.getDriver().manage().deleteAllCookies();
         advancedSearchPage.searchBtn.click();
         advancedSearchPage.waitT();
+
+        System.out.println("==========>>>> " + Math.PI);
     }
 
     @Then("User should be see some results\\/listings in the next page")
@@ -103,27 +102,38 @@ public class MainPageStep {
 ////      System.out.println("--------------------->>>>>"+expected);
 //        advancedSearchPage.waitT();
 //        String excepted="Certified BMW Convertibles for Sale in Alpharetta, GA";
-        String actual=AutoDriver.getDriver().getTitle();
+        String actual = AutoDriver.getDriver().getTitle();
         Assert.assertTrue(actual.contains("BMW"));
 
     }
 
     @Then("User only see BMW result")
     public void user_only_see_BMW_result() {
-        List<WebElement> list=AutoDriver.getDriver().findElements(By.xpath("//a/h2[contains(data-cmp=\"subheading\",BMW)]"));
-        System.out.println(list.size());
-        for (WebElement each:list) {
-            System.out.println(each.getText());
-        }
+        List<WebElement> list = AutoDriver.getDriver().findElements(By.xpath("//a/h2[contains(data-cmp=\"subheading\",BMW)]"));
+        List<WebElement> list2 = new LinkedList<>();
+        for (WebElement each : list) {
 
+            if (each.getText().toLowerCase().contains("certified")
+                    && each.getText().toLowerCase().contains("convertible") && !each.getText().toLowerCase().contains("xdrive") && (
+                    each.getText().toLowerCase().contains("2018") || each.getText().toLowerCase().contains("2019") ||
+                            each.getText().toLowerCase().contains("2020") || each.getText().toLowerCase().contains("2017"))) {
+                System.out.println(each.getText());
+                list2.add(each);
+            }
+
+        }
+        System.out.println(list2.size());
+        String a=""+list2.size();
+
+        Assert.assertTrue("Controlling result number not equal",advancedSearchPage.result.getText().contains(a));
+        System.out.println(advancedSearchPage.result.getText());
+        System.out.println(a);
     }
 
     @Then("Log to the console, the total number of cars\\/listings you see in the results page")
     public void log_to_the_console_the_total_number_of_cars_listings_you_see_in_the_results_page() {
-
+        System.out.println("Full SUCCESSFUL");
     }
-
-
 
 
 }

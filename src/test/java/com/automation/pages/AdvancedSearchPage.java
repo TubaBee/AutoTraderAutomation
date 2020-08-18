@@ -30,8 +30,8 @@ public class AdvancedSearchPage {
     @FindBy(xpath = "//button[contains(text(),'Search')]")
     public WebElement searchBtn;
 
-//    @FindBy(xpath = "//a/h2[contains(data-cmp=\"subheading\",BMW)]")
-//    public List onlyBMW;
+    @FindBy(xpath = "//*[@id=\"mountNode\"]/div/div[3]/div/div[2]/div[2]/div[2]/div[2]/div[1]")
+    public WebElement result;
 
 
     public void waitT(){

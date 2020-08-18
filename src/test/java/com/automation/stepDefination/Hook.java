@@ -13,6 +13,7 @@ public class Hook {
     public void setups() {
         System.out.println("Test started at " + LocalTime.now());
 
+
     }
 
     @After
@@ -21,7 +22,7 @@ public class Hook {
         System.out.println("Test finished at " + LocalTime.now());
 
 //        AutoDriver.getDriver().close();
-
+//        AutoDriver.closeDriver();
 
     }
 }
